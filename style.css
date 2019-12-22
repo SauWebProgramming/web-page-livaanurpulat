@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+#header{
+	width:1500px;
+	height:200px;
+	background:#FFFFFF;
+	
+	margin:0 auto 0 auto;
+	display:table;	
+}
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color:#FFFFFF;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  font-family:"courier new";
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+  font-family:"courier new";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #000080;
+  text-decoration: underline;
+}
+#content{
+	width:970px;
+	height:auto;
+	background:#FFFFFF;
+	padding:10px 15px 10px 15px;
+	margin:20px auto 20px auto;
+	display:table;
+}
+#content h1{
+	margin:0 auto 0 auto;
+	display:table;
+	color:#000080;
+	font-family:"courier new";
+}
+#content h2{
+	margin:0 auto 0 auto;
+	display:table;
+	color:#000080;
+	font-family:"courier new";
+	
+}
+#content img{
+	padding:10px 15px 10px 15px;
+	margin:0 auto 0 auto;
+    display:table;	
+}
+#footer{
+	margin:0 auto 0 auto;
+	display:table;
+}
+.websitesilogo{
+	margin:20px auto 20px auto;
+	display:table;
+	
+	width:200px;
+	height:auto;	
+}
+.menu{
+	margin:20px auto 20px auto;
+	display:table;
+		
+}	
+.menu li{
+	float:left;
+	list-style-type:none;
+	margin-right:50px;
+	
+}
+.menu li a{
+    color:#000080;
+	font-family:"courier new";
+	font-size:30px;
+	text-decoration:none;
+
+}	
+.menu li a:hover{
+	color:#87CEFA;
+}
+.row > .column {
+ padding-left: 5px;
+ padding-right: 5px;
+}
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.column {
+ float: left;
+ width: 24%;
+}
+
+.modal {
+ display: none;
+ position: fixed;
+ z-index: 1;
+ padding-top: 100px;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ overflow: auto;
+ background-color: black;
+}
+
+.modal-content {
+ position: relative;
+ background-color: #fefefe;
+ margin: auto;
+ padding: 0;
+ width: 90%;
+ max-width: 1200px;
+}
+
+.close {
+ color: white;
+ position: absolute;
+ top: 10px;
+ right: 25px;
+ font-size: 35px;
+ font-weight: bold;
+}
+.close:hover,
+.close:focus {
+ color: #999;
+ text-decoration: none;
+ cursor: pointer;
+}
+.mySlides {
+ display: none;
+}
+
+.prev,
+.next {
+ cursor: pointer;
+ position: absolute;
+ top: 50%;
+ width: auto;
+ padding: 16px;
+ margin-top: -50px;
+ color: white;
+ font-weight: bold;
+ font-size: 20px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+ -webkit-user-select: none;
+}
+
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+ background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+ color: #f2f2f2;
+ font-size: 12px;
+ padding: 8px 12px;
+ position: absolute;
+ top: 0;
+}
+.caption-container {
+ text-align: center;
+ background-color: black;
+ padding: 2px 16px;
+ font-family:"courier new";
+ color: white;
+}
+img.demo {
+ opacity: 0.6;
+}
+.active,
+.demo:hover {
+ opacity: 1;
+}
+img.hover-shadow {
+ transition: 0.3s
+}
+.hover-shadow:hover {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.slider{
+ width:100%;
+ height:200px;
+}
+.secili{
+	color:#87CEFA ! important;
+}
